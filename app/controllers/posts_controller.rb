@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
 		@posts = Post.all.order('created_at DESC')
@@ -11,7 +12,7 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 			if @post.save
-				flash[:success] = "Post created successfully"
+	#			flash[:success] = "Post created successfully"
 				redirect_to @post
 			else
 		render 'new'
@@ -29,7 +30,7 @@ class PostsController < ApplicationController
 	def update
 		@post = Post.find(params[:id])
 		if @post.update(params[:post].permit(:title, :body))
-			flash[:success] = "Post updated sucessfully"
+	#		flash[:success] = "Post updated sucessfully"
 			redirect_to @post 
 		else
 			render 'edit'
