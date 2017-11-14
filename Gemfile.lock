@@ -39,14 +39,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    autoprefixer-rails (7.1.6)
-      execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
-    bootstrap (4.0.0.beta2.1)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.3, < 2)
-      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (9.1.0)
     coffee-rails (4.2.2)
@@ -95,7 +89,6 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    popper_js (1.12.5)
     puma (3.10.0)
     rack (2.0.3)
     rack-test (0.6.3)
@@ -179,7 +172,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.beta2.1)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.2)
