@@ -19,6 +19,7 @@ gem 'pg', '~> 0.20'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
@@ -30,7 +31,7 @@ group :development do
 end
 
 group :production do 
-	
+	gem 'pg', '~> 0.18'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
