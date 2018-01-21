@@ -15,11 +15,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
+gem 'pg', '~> 0.20'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-	gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 end
 
 group :development do
@@ -31,7 +30,7 @@ group :development do
 end
 
 group :production do 
-	gem 'pg', '~> 0.20'
+	
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
