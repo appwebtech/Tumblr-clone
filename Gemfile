@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
- # gem 'sqlite3', '1.3.13'
+ # gem 'sqlite3'
 end
 
 group :development do
